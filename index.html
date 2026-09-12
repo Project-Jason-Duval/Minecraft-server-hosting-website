@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockHost - Premium Minecraft Server Hosting</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">⬛</span>
+                <span class="brand-name">BlockHost</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="btn-nav">Get Started</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="pixel-text">MINECRAFT</span>
+                    <br>
+                    <span class="highlight">SERVER HOSTING</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Deploy your perfect Minecraft server in seconds. 
+                    <br>
+                    NVMe SSD • 99.9% Uptime • DDoS Protection
+                </p>
+                <div class="hero-cta">
+                    <a href="#pricing" class="btn btn-primary">View Plans</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Servers Deployed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime SLA</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Expert Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose BlockHost?</h2>
+            <p class="section-subtitle">Everything you need to run the perfect Minecraft server</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Setup</h3>
+                    <p>Deploy your server in under 60 seconds with our automated system. No waiting, no hassle.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>DDoS Protection</h3>
+                    <p>Advanced mitigation keeps your server online even during attacks. Game traffic only.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>NVMe SSD Storage</h3>
+                    <p>Lightning-fast storage ensures quick world loads and smooth chunk generation.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Locations</h3>
+                    <p>Choose from 15+ data centers worldwide for the lowest latency for your players.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Easy Control Panel</h3>
+                    <p>Manage files, plugins, mods, and backups with our intuitive custom panel.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>One-Click Modpacks</h3>
+                    <p>Install 1000+ modpacks and plugins instantly. FTB, CurseForge, and more.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Auto Backups</h3>
+                    <p>Daily automatic backups keep your world safe. Restore anytime with one click.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Unlimited Slots</h3>
+                    <p>Never pay per player slot. Host as many friends as your server can handle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Choose Your Plan</h2>
+            <p class="section-subtitle">Flexible pricing for every type of server</p>
+
+            <div class="pricing-toggle">
+                <span class="toggle-label">Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="billing-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Yearly <span class="save-badge">Save 20%</span></span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card" data-monthly="3.99" data-yearly="38.30">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Dirt</h3>
+                        <div class="plan-price">
+                            <span class="currency">€</span>
+                            <span class="amount monthly">3.99</span>
+                            <span class="amount yearly" style="display:none;">38.30</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-ram">2 GB RAM</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✅ Unlimited Player Slots</li>
+                        <li>✅ NVMe SSD Storage</li>
+                        <li>✅ DDoS Protection</li>
+                        <li>✅ Free Subdomain</li>
+                        <li>✅ 24/7 Support</li>
+                        <li>⚠️ Shared CPU</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-plan">Get Started</a>
+                </div>
+
+                <!-- Standard Plan -->
+                <div class="pricing-card popular" data-monthly="7.99" data-yearly="76.70">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Stone</h3>
+                        <div class="plan-price">
+                            <span class="currency">€</span>
+                            <span class="amount monthly">7.99</span>
+                            <span class="amount yearly" style="display:none;">76.70</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-ram">4 GB RAM</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✅ Unlimited Player Slots</li>
+                        <li>✅ NVMe SSD Storage</li>
+                        <li>✅ Premium DDoS Protection</li>
+                        <li>✅ Free Domain (.mc.host)</li>
+                        <li>✅ Priority Support</li>
+                        <li>✅ Dedicated CPU Core</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-plan">Get Started</a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card" data-monthly="15.99" data-yearly="153.50">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Diamond</h3>
+                        <div class="plan-price">
+                            <span class="currency">€</span>
+                            <span class="amount monthly">15.99</span>
+                            <span class="amount yearly" style="display:none;">153.50</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-ram">8 GB RAM</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✅ Unlimited Player Slots</li>
+                        <li>✅ 100 GB NVMe SSD</li>
+                        <li>✅ Advanced DDoS Protection</li>
+                        <li>✅ Free Custom Domain</li>
+                        <li>✅ 24/7 Priority Support</li>
+                        <li>✅ 2 Dedicated CPU Cores</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-plan">Get Started</a>
+                </div>
+
+                <!-- Ultimate Plan -->
+                <div class="pricing-card" data-monthly="29.99" data-yearly="287.90">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Netherite</h3>
+                        <div class="plan-price">
+                            <span class="currency">€</span>
+                            <span class="amount monthly">29.99</span>
+                            <span class="amount yearly" style="display:none;">287.90</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-ram">16 GB RAM</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✅ Unlimited Player Slots</li>
+                        <li>✅ 200 GB NVMe SSD</li>
+                        <li>✅ Enterprise DDoS Protection</li>
+                        <li>✅ Free Premium Domain</li>
+                        <li>✅ Dedicated Support Agent</li>
+                        <li>✅ 4 Dedicated CPU Cores</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-plan">Get Started</a>
+                </div>
+            </div>
+
+            <p class="pricing-note">💡 All plans include: Java & Bedrock support, unlimited backups, modpack installer, file manager, database, and 99.9% uptime guarantee</p>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="locations">
+        <div class="container">
+            <h2 class="section-title">Global Server Locations</h2>
+            <p class="section-subtitle">Choose the data center closest to your players for the best latency</p>
+
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-flag">🇬🇧</div>
+                    <h4>London, UK</h4>
+                    <p>Europe West</p>
+                </div>
+                <div class="location-card">
+                    <div class="location-flag">🇩🇪</div>
+                    <h4>Falkenstein, DE</h4>
+                    <p>Europe Central</p>
+                </div>
+                <div class="location-card">
+                    <div class="location-flag">🇫🇷</div>
+                    <h4>Paris, FR</h4>
+                    <p>Europe West</p>
+                </div>
+                <div class="location-card">
+                    <div class="location-flag">🇺🇸</div>
+                    <h4>New York, US</h4>
+                    <p>North America East</p>
+                </div>
+                <div class="location-card">
+                    <div class="location-flag">🇺🇸</div>
+                    <h4>Los Angeles, US</h4>
+                    <p>North America West</p>
+                </div>
+                <div class="location-card">
+                    <div class="location-flag">🇨🇦</div>
+                    <h4>Montreal, CA</h4>
+                    <p>North America</p>
+                </div>
+                <div class="location-card">
+                    <div class="location-flag">🇦🇺</div>
+                    <h4>Sydney, AU</h4>
+                    <p>Oceania</p>
+                </div>
+                <div class="location-card">
+                    <div class="location-flag">🇸🇬</div>
+                    <h4>Singapore, SG</h4>
+                    <p>Asia Southeast</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I set up my Minecraft server?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>After purchasing, you'll receive instant access to our control panel. Simply select your server version (Java or Bedrock), choose from thousands of one-click modpacks or upload your own, and click "Start Server". Your server will be online in under 60 seconds.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I upgrade my plan later?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You can upgrade or downgrade your plan at any time from the control panel. The price difference is prorated, so you only pay for what you use. Upgrades are instant with zero downtime.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you support modpacks and plugins?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We support 1000+ one-click modpacks from FTB, CurseForge, Technic, and more. You can also upload custom modpacks, install plugins via our built-in manager, and access full FTP/SFTP for complete control.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What happens if my server goes down?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our 99.9% uptime SLA means your server is almost always online. If issues occur, automatic restarts kick in within seconds. Daily backups ensure you never lose progress. Our 24/7 support team is always ready to help.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is there a money-back guarantee?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer a 7-day money-back guarantee on all plans. If you're not satisfied for any reason, contact support within 7 days and we'll refund your payment in full, no questions asked.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I host Bedrock and Java together?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Using GeyserMC (available as a one-click install), you can allow both Java and Bedrock players to join the same server. Perfect for playing with friends on different devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Start Your Server?</h2>
+                    <p>Join thousands of happy customers hosting their Minecraft worlds with BlockHost</p>
+                    <ul class="contact-features">
+                        <li>⚡ Instant Setup - Online in 60 seconds</li>
+                        <li>🛡️ 7-Day Money-Back Guarantee</li>
+                        <li>💬 24/7 Expert Support</li>
+                        <li>🔄 Free Daily Backups</li>
+                    </ul>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="signup-form">
+                        <h3>Get Started Today</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Steve Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="steve@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="plan">Select Plan</label>
+                            <select id="plan" name="plan" required>
+                                <option value="">Choose a plan...</option>
+                                <option value="dirt">Dirt - €3.99/mo (2GB RAM)</option>
+                                <option value="stone">Stone - €7.99/mo (4GB RAM)</option>
+                                <option value="diamond">Diamond - €15.99/mo (8GB RAM)</option>
+                                <option value="netherite">Netherite - €29.99/mo (16GB RAM)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Notes (Optional)</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Any specific requirements?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Start My Server</button>
+                        <p class="form-note">No payment required until you choose a server configuration</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <span class="logo">⬛</span>
+                        <span class="brand-name">BlockHost</span>
+                    </div>
+                    <p>Premium Minecraft server hosting with instant setup, global locations, and 24/7 support.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Discord</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Minecraft Java</a></li>
+                        <li><a href="#">Minecraft Bedrock</a></li>
+                        <li><a href="#">Modpack Hosting</a></li>
+                        <li><a href="#">Dedicated Servers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Knowledge Base</a></li>
+                        <li><a href="#">Submit Ticket</a></li>
+                        <li><a href="#">Server Status</a></li>
+                        <li><a href="#">Discord Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 BlockHost. Not affiliated with Mojang Studios or Microsoft.</p>
+                <p>Minecraft is a trademark of Mojang Synergies AB.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
