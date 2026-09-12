@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deploy Server – BlockHost</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">⬛</span>
+                <span class="brand-name">BlockHost</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#locations">Locations</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#contact" class="btn-nav">Back to Home</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <main class="deploy-page">
+        <div class="container">
+            <header class="deploy-header">
+                <h1 class="deploy-title"><span class="pixel-text">DEPLOY</span> <span class="highlight">SERVER</span></h1>
+                <p class="deploy-subtitle">Configure and launch your Minecraft server in minutes</p>
+            </header>
+
+            <div class="deploy-grid">
+                <section class="deploy-card">
+                    <h2>1. Choose Plan</h2>
+                    <div class="plan-selector">
+                        <label class="plan-option">
+                            <input type="radio" name="plan" value="dirt" data-ram="2" data-price="3.99" />
+                            <div class="plan-option-content">
+                                <div class="plan-name">Dirt</div>
+                                <div class="plan-specs">2 GB RAM • Shared CPU</div>
+                                <div class="plan-price">€<span>3.99</span>/mo</div>
+                            </div>
+                        </label>
+                        <label class="plan-option">
+                            <input type="radio" name="plan" value="stone" data-ram="4" data-price="7.99" />
+                            <div class="plan-option-content">
+                                <div class="plan-name">Stone</div>
+                                <div class="plan-specs">4 GB RAM • 1 Dedicated Core</div>
+                                <div class="plan-price">€<span>7.99</span>/mo</div>
+                            </div>
+                        </label>
+                        <label class="plan-option">
+                            <input type="radio" name="plan" value="diamond" data-ram="8" data-price="15.99" />
+                            <div class="plan-option-content">
+                                <div class="plan-name">Diamond</div>
+                                <div class="plan-specs">8 GB RAM • 2 Dedicated Cores</div>
+                                <div class="plan-price">€<span>15.99</span>/mo</div>
+                            </div>
+                        </label>
+                        <label class="plan-option">
+                            <input type="radio" name="plan" value="netherite" data-ram="16" data-price="29.99" />
+                            <div class="plan-option-content">
+                                <div class="plan-name">Netherite</div>
+                                <div class="plan-specs">16 GB RAM • 4 Dedicated Cores</div>
+                                <div class="plan-price">€<span>29.99</span>/mo</div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="deploy-card">
+                    <h2>2. Server Details</h2>
+                    <form id="server-form">
+                        <div class="form-group">
+                            <label for="server-name">Server Name</label>
+                            <input type="text" id="server-name" required placeholder="My Awesome Server" />
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="server-version">Version</label>
+                                <select id="server-version" required>
+                                    <option value="">Select version...</option>
+                                    <option value="1.21.4">1.21.4 (Latest)</option>
+                                    <option value="1.21.1">1.21.1</option>
+                                    <option value="1.20.6">1.20.6</option>
+                                    <option value="1.20.4">1.20.4</option>
+                                    <option value="1.19.4">1.19.4</option>
+                                    <option value="1.18.2">1.18.2</option>
+                                    <option value="1.16.5">1.16.5</option>
+                                    <option value="1.12.2">1.12.2 (Modded)</option>
+                                    <option value="1.8.9">1.8.9 (PvP)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="server-type">Server Type</label>
+                                <select id="server-type" required>
+                                    <option value="vanilla">Vanilla</option>
+                                    <option value="paper">Paper (Performance)</option>
+                                    <option value="spigot">Spigot</option>
+                                    <option value="fabric">Fabric</option>
+                                    <option value="forge">Forge</option>
+                                    <option value="bedrock">Bedrock Dedicated</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="server-location">Location</label>
+                            <select id="server-location" required>
+                                <option value="">Choose data center...</option>
+                                <option value="london">🇬🇧 London, UK</option>
+                                <option value="falkenstein">🇩🇪 Falkenstein, DE</option>
+                                <option value="paris">🇫🇷 Paris, FR</option>
+                                <option value="newyork">🇺🇸 New York, US</option>
+                                <option value="losangeles">🇺🇸 Los Angeles, US</option>
+                                <option value="montreal">🇨🇦 Montreal, CA</option>
+                                <option value="sydney">🇦🇺 Sydney, AU</option>
+                                <option value="singapore">🇸🇬 Singapore, SG</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="server-motd">Server MOTD (Optional)</label>
+                            <input type="text" id="server-motd" placeholder="Welcome to my server!" maxlength="60" />
+                        </div>
+                    </form>
+                </section>
+
+                <section class="deploy-card">
+                    <h2>3. Add-ons</h2>
+                    <div class="addons-grid">
+                        <label class="addon-option">
+                            <input type="checkbox" id="addon-backups" checked />
+                            <div class="addon-content">
+                                <div class="addon-name">Auto Backups</div>
+                                <div class="addon-desc">Daily automatic backups (7 days retained)</div>
+                                <div class="addon-price">Free</div>
+                            </div>
+                        </label>
+                        <label class="addon-option">
+                            <input type="checkbox" id="addon-ddos" checked />
+                            <div class="addon-content">
+                                <div class="addon-name">Premium DDoS Protection</div>
+                                <div class="addon-desc">Advanced game traffic filtering</div>
+                                <div class="addon-price">Free</div>
+                            </div>
+                        </label>
+                        <label class="addon-option">
+                            <input type="checkbox" id="addon-subdomain" />
+                            <div class="addon-content">
+                                <div class="addon-name">Custom Subdomain</div>
+                                <div class="addon-desc">yourname.mc.blockhost.net</div>
+                                <div class="addon-price">€1.99/mo</div>
+                            </div>
+                        </label>
+                        <label class="addon-option">
+                            <input type="checkbox" id="addon-premium-cpu" />
+                            <div class="addon-content">
+                                <div class="addon-name">Premium CPU Boost</div>
+                                <div class="addon-desc">Higher clock speed for heavy modpacks</div>
+                                <div class="addon-price">€4.99/mo</div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="deploy-card deploy-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-details">
+                        <div class="summary-row"><span>Plan:</span> <strong id="summary-plan">—</strong></div>
+                        <div class="summary-row"><span>RAM:</span> <strong id="summary-ram">—</strong></div>
+                        <div class="summary-row"><span>Location:</span> <strong id="summary-location">—</strong></div>
+                        <div class="summary-row"><span>Version:</span> <strong id="summary-version">—</strong></div>
+                        <div class="summary-row"><span>Type:</span> <strong id="summary-type">—</strong></div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-row total"><span>Monthly Total:</span> <strong id="summary-total">€0.00</strong></div>
+                    </div>
+                    <button type="button" id="deploy-btn" class="btn btn-primary btn-full" disabled>
+                        Deploy Server
+                    </button>
+                    <p class="deploy-note">
+                        By deploying, you agree to our <a href="#">Terms of Service</a>. Your server will be ready in under 60 seconds.
+                    </p>
+                </section>
+            </div>
+
+            <div id="deploy-status" class="deploy-status" style="display:none;">
+                <div class="status-card">
+                    <div class="status-icon">🎉</div>
+                    <h3>Server Deployed Successfully!</h3>
+                    <p>Your Minecraft server is now online and ready to play.</p>
+                    <div class="server-details">
+                        <div class="detail-row"><span>Server IP:</span> <code id="server-ip">play.blockhost.net</code></div>
+                        <div class="detail-row"><span>Port:</span> <code>25565</code></div>
+                        <div class="detail-row"><span>Control Panel:</span> <a href="#" id="panel-link">Open Dashboard</a></div>
+                    </div>
+                    <div class="status-actions">
+                        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+                        <button type="button" class="btn btn-primary" onclick="window.print()">Print Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 BlockHost. Not affiliated with Mojang Studios or Microsoft.</p>
+                <p>Minecraft is a trademark of Mojang Synergies AB.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="deploy.js"></script>
+</body>
+</html>

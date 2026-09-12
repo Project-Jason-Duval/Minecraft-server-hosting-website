@@ -1,0 +1,56 @@
+
+.deploy-page { padding: 64px 0 96px; background: linear-gradient(180deg, #0c1621, #081019); min-height: 100vh; }
+.deploy-header { text-align: center; margin-bottom: 42px; }
+.deploy-title { margin: 0; line-height: 1.22; }
+.deploy-subtitle { color: var(--muted); margin: 12px 0 0; font-size: 1.05rem; }
+.deploy-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.deploy-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
+.deploy-card h2 { margin: 0 0 18px; font-size: 1.25rem; }
+
+.plan-selector { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.plan-option { display: flex; gap: 12px; padding: 14px; border: 1px solid var(--border); border-radius: 10px; cursor: pointer; transition: border-color .2s, background .2s; }
+.plan-option:hover { border-color: rgba(98,200,93,.5); background: rgba(98,200,93,.05); }
+.plan-option input[type="radio"] { margin: 4px 0 0; accent-color: var(--green); }
+.plan-option-content { flex: 1; }
+.plan-name { font-weight: 800; margin-bottom: 4px; }
+.plan-specs { font-size: .82rem; color: var(--muted); margin-bottom: 6px; }
+.plan-price { font-size: .95rem; font-weight: 800; color: var(--green); }
+
+.form-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.form-group { margin-bottom: 14px; }
+.form-group label { display: block; margin-bottom: 6px; font-weight: 700; font-size: .87rem; }
+.form-group input, .form-group select { width: 100%; border: 1px solid #30475b; border-radius: 8px; color: white; background: #152534; font: inherit; padding: 11px 12px; outline: none; }
+.form-group input:focus, .form-group select:focus { border-color: var(--green); }
+
+.addons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.addon-option { display: flex; gap: 12px; padding: 13px; border: 1px solid var(--border); border-radius: 10px; cursor: pointer; transition: border-color .2s, background .2s; }
+.addon-option:hover { border-color: rgba(98,200,93,.5); background: rgba(98,200,93,.05); }
+.addon-option input[type="checkbox"] { margin: 4px 0 0; accent-color: var(--green); }
+.addon-content { flex: 1; }
+.addon-name { font-weight: 700; margin-bottom: 3px; }
+.addon-desc { font-size: .78rem; color: var(--muted); margin-bottom: 5px; }
+.addon-price { font-size: .85rem; font-weight: 800; color: var(--green); }
+
+.deploy-summary { position: sticky; top: 96px; }
+.summary-details { background: #0d1721; border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+.summary-row { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; font-size: .92rem; }
+.summary-divider { border-top: 1px solid var(--border); margin: 8px 0; }
+.summary-row.total { font-size: 1.05rem; margin-top: 6px; }
+.summary-row.total strong { color: var(--green); }
+.btn-full { width: 100%; }
+.deploy-note { font-size: .78rem; color: var(--muted); text-align: center; margin: 12px 0 0; }
+.deploy-note a { color: var(--green); }
+
+.deploy-status { margin-top: 32px; }
+.status-card { background: #0f2414; border: 2px solid var(--green); border-radius: 14px; padding: 32px; text-align: center; }
+.status-icon { font-size: 3.5rem; margin-bottom: 12px; }
+.status-card h3 { margin: 0 0 8px; font-size: 1.5rem; }
+.status-card > p { margin: 0 0 22px; color: #b8d6c4; }
+.server-details { background: #0a1810; border: 1px solid rgba(98,200,93,.35); border-radius: 10px; padding: 16px; margin: 0 auto 22px; max-width: 520px; text-align: left; }
+.detail-row { display: flex; justify-content: space-between; gap: 14px; padding: 7px 0; font-size: .92rem; }
+.detail-row code { background: #0d1f16; padding: 4px 9px; border-radius: 6px; font-family: Consolas, monospace; font-size: .88rem; }
+.detail-row a { color: var(--green); font-weight: 700; }
+.status-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 950px) { .deploy-grid { grid-template-columns: 1fr; }.plan-selector, .addons-grid { grid-template-columns: 1fr; }.deploy-summary { position: static; }.form-row { grid-template-columns: 1fr; } }
+@media (max-width: 650px) { .deploy-page { padding: 48px 0 64px; }.deploy-card { padding: 18px; }.status-card { padding: 22px 16px; } }
